@@ -5,3 +5,6 @@
 4.  Now we do "dvc init" (create .dvcignore,.dvc)
 5. create a new s3 directory
 6. do "dvc remote add -d myremote s3"  (send loc of data)
+7. do "dvc add data/" to add all data (This will show error, we have to untract data from git and give it to dvc)
+8.  do "dvc add data/" then add .gitignore data.dvc (to keep track)
+9.  "dvc commit" and dvc push  (to push data to s3)
