@@ -8,3 +8,12 @@
 7. do "dvc add data/" to add all data (This will show error, we have to untract data from git and give it to dvc)
 8.  do "dvc add data/" then add .gitignore data.dvc (to keep track)
 9.  "dvc commit" and dvc push  (to push data to s3)
+10. now do git add-commit-push to mark first stage of data versioning
+11. Make changes to data (add more rows)
+12. do 9 and 10(2nd data version(v2))
+13. repeat 11-12 for v3 data version
+
+# if we want to rollback to data
+git log --oneline
+git checkout <id>
+dvc pull
